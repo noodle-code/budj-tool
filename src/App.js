@@ -1,14 +1,22 @@
-//import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 import {
-  Record
+  Record,
+  Home
 } from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <Record />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/account" component={Record}/>
+      </Switch>
+    </Router>
   );
 }
 
