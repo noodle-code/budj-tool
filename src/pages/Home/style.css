@@ -1,0 +1,10 @@
+.home__section {
+  padding: 30px 25px;
+  background-color: #CCC;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+div.col.home__section h2 {
+  margin-bottom: 30px;
+}
