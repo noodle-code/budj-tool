@@ -7,7 +7,7 @@ import {
 
 import {
   PageWrapper,
-  CardLink
+  AccountCard
 } from './../../components';
 
 import './style.css';
@@ -31,29 +31,19 @@ const Home = () => (
             <Container>
               <Row>
                 <Col xs={4}>
-                  <CardLink to="/account">
-                    <h4>ACC</h4>
-                  </CardLink>
+                  <AccountCard to="/account" name="ACC" />
                 </Col>
                 <Col xs={4}>
-                  <CardLink to="/account">
-                    <h4>ACC</h4>
-                  </CardLink>
+                  <AccountCard to="/account" name="ACC" />
                 </Col>
                 <Col xs={4}>
-                  <CardLink to="/account">
-                    <h4>ACC</h4>
-                  </CardLink>
+                  <AccountCard to="/account" name="ACC" />
                 </Col>
                 <Col xs={4}>
-                  <CardLink to="/account">
-                    <h4>ACC</h4>
-                  </CardLink>
+                  <AccountCard to="/account" name="ACC" />
                 </Col>
                 <Col xs={4}>
-                  <CardLink to="/account">
-                    <h4>ACC</h4>
-                  </CardLink>
+                  <AccountCard to="/account" name="ACC" />
                 </Col>
               </Row>
             </Container>
