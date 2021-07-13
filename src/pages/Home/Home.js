@@ -1,14 +1,13 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import {
   Container,
   Row,
-  Col,
-  Card
+  Col
 } from 'react-bootstrap';
 
 import {
   PageWrapper,
+  CardLink
 } from './../../components';
 
 import './style.css';
@@ -24,44 +23,37 @@ const Home = () => (
       </Row>
       <Row>
         <Col className="home__section">
-          <h2>Accounts</h2>
+          <div className="home__section__header">
+            <h2>Accounts</h2>
+            <p>Manage</p>
+          </div>
           <div>
             <Container>
               <Row>
                 <Col xs={4}>
-                  <Card>
-                    <Card.Body>
-                      <h4>ACC</h4>
-                    </Card.Body>
-                  </Card>
+                  <CardLink to="/account">
+                    <h4>ACC</h4>
+                  </CardLink>
                 </Col>
                 <Col xs={4}>
-                  <Card>
-                    <Card.Body>
-                      <h4>ACC</h4>
-                    </Card.Body>
-                  </Card>
+                  <CardLink to="/account">
+                    <h4>ACC</h4>
+                  </CardLink>
                 </Col>
                 <Col xs={4}>
-                  <Card>
-                    <Card.Body>
-                      <h4>ACC</h4>
-                    </Card.Body>
-                  </Card>
+                  <CardLink to="/account">
+                    <h4>ACC</h4>
+                  </CardLink>
                 </Col>
                 <Col xs={4}>
-                  <Card>
-                    <Card.Body>
-                      <h4>ACC</h4>
-                    </Card.Body>
-                  </Card>
+                  <CardLink to="/account">
+                    <h4>ACC</h4>
+                  </CardLink>
                 </Col>
                 <Col xs={4}>
-                  <Card>
-                    <Card.Body>
-                      <h4>ACC</h4>
-                    </Card.Body>
-                  </Card>
+                  <CardLink to="/account">
+                    <h4>ACC</h4>
+                  </CardLink>
                 </Col>
               </Row>
             </Container>

@@ -8,3 +8,8 @@
 div.col.home__section h2 {
   margin-bottom: 30px;
 }
+
+div.col.home__section .home__section__header {
+  display: flex;
+  justify-content: space-between;
+}
