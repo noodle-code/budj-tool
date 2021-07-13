@@ -6,14 +6,22 @@ import {
 
 import './style.css';
 
-const CardLink = props => (
-  <LinkContainer to={props.to}>
+const CardLink = props => {
+  if (props.to) {
+    return (
+      <LinkContainer to={props.to}>
+        <Card className="cardLink">
+          {props.children}
+        </Card>
+      </LinkContainer>
+    );
+  }
+
+  return (
     <Card className="cardLink">
-      <Card.Body>
-        {props.children}
-      </Card.Body>
+      {props.children}
     </Card>
-  </LinkContainer>
-);
+  );
+}
 
 export default CardLink;
