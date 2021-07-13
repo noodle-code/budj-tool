@@ -3,11 +3,13 @@ import PageWrapper from './PageWrapper/PageWrapper';
 import ExpenseTable from './ExpenseTable/ExpenseTable';
 import ExpenseModal from './ExpenseModal/ExpenseModal';
 import Navbar from './Navbar/Navbar';
+import CardLink from './CardLink/CardLink';
 
 export {
   ExpenseForm,
   PageWrapper,
   ExpenseTable,
   ExpenseModal,
-  Navbar
+  Navbar,
+  CardLink
 };
