@@ -18,6 +18,9 @@ const Navbar = () => (
           <LinkContainer to="/">
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/">
+            <Nav.Link>Config</Nav.Link>
+          </LinkContainer>
         </Nav>
       </ReactNavbar.Collapse>
     </Container>
