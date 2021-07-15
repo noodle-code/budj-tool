@@ -10,7 +10,7 @@ const CardLink = props => {
   if (props.to) {
     return (
       <LinkContainer to={props.to}>
-        <Card className="cardLink">
+        <Card className={`cardLink ${props.className}`}>
           {props.children}
         </Card>
       </LinkContainer>
@@ -18,10 +18,14 @@ const CardLink = props => {
   }
 
   return (
-    <Card className="cardLink">
+    <Card className={`cardLink ${props.className}`}>
       {props.children}
     </Card>
   );
 }
+
+CardLink.defaultProps = {
+  className: ""
+};
 
 export default CardLink;
