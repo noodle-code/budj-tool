@@ -4,6 +4,9 @@ import {
   Row,
   Col
 } from 'react-bootstrap';
+import {
+  Link
+} from 'react-router-dom';
 
 import {
   PageWrapper,
@@ -45,7 +48,7 @@ const Home = () => {
           <Col className="home__section">
             <div className="home__section__header">
               <h2>Accounts</h2>
-              <p>Manage</p>
+              <Link to="/accounts">Manage</Link>
             </div>
             <div className="home__accounts">
               {accounts.map(item => {

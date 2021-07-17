@@ -6,7 +6,8 @@ import {
 
 import {
   Record,
-  Home
+  Home,
+  Accounts
 } from './pages';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/accounts/:account_id" component={Record}/>
+        <Route exact path="/accounts" component={Accounts}/>
       </Switch>
     </Router>
   );
