@@ -1,0 +1,10 @@
+.accounts__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accounts__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
