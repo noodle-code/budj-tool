@@ -4,6 +4,9 @@ import {
   Row,
   Col
 } from 'react-bootstrap';
+import {
+  Link
+} from 'react-router-dom';
 
 import {
   PageWrapper,
@@ -60,9 +63,9 @@ const Accounts = () => {
     <PageWrapper>
       <Container>
         <Row>
-          <Col className="accounts__header">
+          <Col className="justify--spaceBetween">
             <h3>Accounts</h3>
-            <p>Add new</p>
+            <Link to="/accounts/create">Add new</Link>
           </Col>
         </Row>
         <Row>

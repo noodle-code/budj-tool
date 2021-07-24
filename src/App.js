@@ -7,16 +7,20 @@ import {
 import {
   Record,
   Home,
-  Accounts
+  Accounts,
+  AccountForm
 } from './pages';
+
+import './App.css';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/accounts/:account_id" component={Record}/>
         <Route exact path="/accounts" component={Accounts}/>
+        <Route exact path="/accounts/create" component={AccountForm}/>
+        <Route exact path="/accounts/:account_id" component={Record}/>
       </Switch>
     </Router>
   );
