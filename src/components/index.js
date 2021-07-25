@@ -5,6 +5,7 @@ import ExpenseModal from './ExpenseModal/ExpenseModal';
 import Navbar from './Navbar/Navbar';
 import CardLink from './CardLink/CardLink';
 import AccountCard from './AccountCard/AccountCard';
+import LabeledInput from './LabeledInput/LabeledInput';
 
 export {
   ExpenseForm,
@@ -13,5 +14,6 @@ export {
   ExpenseModal,
   Navbar,
   CardLink,
-  AccountCard
+  AccountCard,
+  LabeledInput
 };
