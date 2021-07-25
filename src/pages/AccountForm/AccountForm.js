@@ -5,25 +5,39 @@ import {
   Col,
   Button
 } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 
 import {
   PageWrapper
 } from './../../components';
+import FormBuilder from './../../forms/components/FormBuilder';
 
-const AccountForm = props => (
-  <PageWrapper>
-    <Container>
-      <Row>
-        <Col className="justify--spaceBetween" xs={12}>
-          <h3>Account name</h3>
-          {props.edit && (
-            <Button variant="danger">Delete</Button>
-          )}
-        </Col>
-      </Row>
-    </Container>
-  </PageWrapper>
-);
+import './style.css';
+
+const AccountForm = props => {
+  const history = useHistory();
+
+  return (
+    <PageWrapper>
+      <Container>
+        <Row>
+          <Col className="justify--spaceBetween">
+            <div className="flex-row headerControl">
+              <Button onClick={history.goBack}>B</Button>
+              <h3>{(props.edit) ? 'Edit Account' : 'Create Account'}</h3>
+            </div>
+            {(props.edit) && (<Button variant="danger">Delete</Button>)}
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <FormBuilder form="financeAccount" />
+          </Col>
+        </Row>
+      </Container>
+    </PageWrapper>
+  );
+};
 
 AccountForm.defaultProps = {
   edit: false
